@@ -34,7 +34,7 @@ h1 {
 
 main {
     margin: auto;
-    margin-top: 150px;
+    margin-top: 125px;
     width: 500px;
     height: 500px;
     display: grid;
@@ -42,3 +42,24 @@ main {
     background: grey;
     padding: 10px;
 }
+
+#options {
+    width: 70%;
+    border-radius: 25px;
+    height: 150px;
+    background: grey;
+    margin: auto;
+    margin-top: 25px;
+    text-align: center;
+}
+
+#gridNum {
+    width: 42px;
+}
+
+#submit {
+    margin: auto;
+    height: 15%;
+    width: 15%;
+}
+

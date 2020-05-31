@@ -37,14 +37,7 @@ main.style.gridTemplateColumns = `repeat(${row}, 1fr)`;
     }
 }
 
-makeGrid(16)
+const gridDimension = document.querySelector('gridNum');
+console.log(gridDimension)
 
-
-/*
-
-    for (let j = 0; j < column; j++) {
-        console.log(j)
-        main.appendChild(newDiv);
-    }
-
-*/
+makeGrid(50)

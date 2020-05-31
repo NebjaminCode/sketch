@@ -3,12 +3,27 @@ html {
     height: 100%;
     margin: auto;
     background: rgb(216, 218, 209);
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
     height: 100px;
     width: 100%;
     background: lightblue;
+    position: absolute;
+    top: 0;
+    font-family: 'Monoton', cursive;
+    margin: auto;
+}
+
+h1 {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 3.5em;
+    letter-spacing: .25em;
 }
 
 #body {

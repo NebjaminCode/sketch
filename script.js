@@ -1,4 +1,4 @@
-const main = document.querySelector('main');
+const main = document.querySelector('#main');
 
 function random() {
     for (let i = 0; i < 255; i++) {
@@ -14,7 +14,8 @@ function makeGrid (row) {
 main.style.gridTemplateColumns = `repeat(${row}, 1fr)`;
 
     for (let i = 0; i < row; i++) {
-        const rowDiv = document.createElement('div');
+const rowDiv = document.createElement('div');
+
             rowDiv.style.background = 'white';
             rowDiv.style.width = '100%';
             rowDiv.style.height = '100%';
@@ -37,7 +38,17 @@ main.style.gridTemplateColumns = `repeat(${row}, 1fr)`;
   }
 }
 
-const but = document.querySelector('button');
-const gridDimension = prompt('');
+const but = document.querySelector('#reset');
 
-makeGrid(gridDimension)
+makeGrid(5)
+but.addEventListener('click', function newGrid() {
+    clearGrid();
+    gridDimension = prompt();
+    makeGrid(gridDimension);
+});
+
+function clearGrid() {
+    while (main.firstChild) {
+        main.removeChild(main.firstChild)
+    }
+}

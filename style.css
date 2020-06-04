@@ -45,21 +45,30 @@ main {
 
 #options {
     width: 70%;
-    border-radius: 25px;
+    border-radius: 10px;
     height: 150px;
-    background: grey;
+    background: rgba(99, 97, 97, 0.685);
     margin: auto;
     margin-top: 25px;
     text-align: center;
+    padding-bottom: -50px;
+}
+
+#box {
+    padding-top: 45px;
 }
 
 #gridNum {
     width: 42px;
 }
 
-#submit {
+button {
     margin: auto;
-    height: 15%;
-    width: 15%;
+    border: none;
+    border-radius: 10px;
+    height: 55px;
+    width: 90px;
+    margin-left: 7px;
+    margin-right: 7px;
 }
 

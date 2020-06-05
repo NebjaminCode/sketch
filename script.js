@@ -32,6 +32,7 @@ const rowDiv = document.createElement('div');
             colDiv.addEventListener("mouseover", mouseOver, false);
             main.appendChild(colDiv);
             function mouseOver() {
+                
                 colDiv.style.background = random();
             }
     }
@@ -39,12 +40,18 @@ const rowDiv = document.createElement('div');
 }
 
 const but = document.querySelector('#reset');
+const colorMode = document.querySelector('#color_mode')
 
 makeGrid(5)
 but.addEventListener('click', function newGrid() {
     clearGrid();
-    gridDimension = prompt();
-    makeGrid(gridDimension);
+    gridDimension = prompt('How many rows would you like?');
+    if (gridDimension == 0) {
+        gridDimension = prompt('Please enter a number greater than 0');
+    } else if (gridDimension > 0) {
+        makeGrid(gridDimension);
+    }
+
 });
 
 function clearGrid() {

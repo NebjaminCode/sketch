@@ -22,7 +22,11 @@ const rowDiv = document.createElement('div');
             rowDiv.addEventListener("mouseover", mouseOver, false);
         main.appendChild(rowDiv);
             function mouseOver() {
-                rowDiv.style.background = random();
+                if (colorChange == true) {
+                    rowDiv.style.background = random(); 
+                 } else {
+                    rowDiv.style.background = 'black';
+                 }
             }
         for (let j = 0; j < row - 1; j++) {
             const colDiv = document.createElement('div');
@@ -32,8 +36,11 @@ const rowDiv = document.createElement('div');
             colDiv.addEventListener("mouseover", mouseOver, false);
             main.appendChild(colDiv);
             function mouseOver() {
-                
-                colDiv.style.background = random();
+                if (colorChange == true) {
+                   colDiv.style.background = random(); 
+                } else {
+                   colDiv.style.background = 'black';
+                }
             }
     }
   }
@@ -59,3 +66,9 @@ function clearGrid() {
         main.removeChild(main.firstChild)
     }
 }
+
+let colorChange = false;
+console.log(colorChange)
+colorMode.addEventListener('click', function(){
+    colorChange = true;  
+});

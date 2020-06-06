@@ -4,6 +4,7 @@ html {
     margin: auto;
     background: rgb(216, 218, 209);
     font-family: 'Montserrat', sans-serif;
+    min-width: 600px;
 }
 
 header {
@@ -46,16 +47,11 @@ main {
 #options {
     width: 70%;
     border-radius: 10px;
-    height: 150px;
+    height: 100px;
     background: rgba(99, 97, 97, 0.685);
     margin: auto;
-    margin-top: 25px;
+    margin-top: 55px;
     text-align: center;
-    padding-bottom: -50px;
-}
-
-#box {
-    padding-top: 45px;
 }
 
 #gridNum {
@@ -69,6 +65,10 @@ button {
     height: 40px;
     width: 90px;
     margin-right: 100px;
+}
+
+#box {
+    margin-top: -6px;
 }
 
 .switch {
@@ -91,9 +91,9 @@ button {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
+    background-color: black;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
 
   .slider:before {
@@ -104,12 +104,12 @@ button {
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: .5s;
+    transition: .5s;
   }
 
   input:checked + .slider {
-    background-color: #2196F3;
+    background: linear-gradient(340deg, rgb(94, 218, 176), rgb(169, 71, 214));
   }
   
   input:focus + .slider {
@@ -128,4 +128,10 @@ button {
   
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  .button_label {
+    display: inline-block;
+    margin-left: 35px;
+    margin-right: 40px;
   }

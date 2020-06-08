@@ -2,19 +2,20 @@ html {
     width: 100%;
     height: 100%;
     margin: auto;
-    background: rgb(216, 218, 209);
+    background: rgb(241, 241, 237);
     font-family: 'Montserrat', sans-serif;
-    min-width: 600px;
+    min-width: 700px;
 }
 
 header {
     height: 100px;
     width: 100%;
-    background: lightblue;
+    background: rgb(210, 244, 255);
     position: absolute;
     top: 0;
     font-family: 'Monoton', cursive;
     margin: auto;
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.171);
 }
 
 h1 {
@@ -42,16 +43,18 @@ main {
     grid-gap: 1px;
     background: whitesmoke;
     padding: 10px;
+    box-shadow: 0px 0px 50px 1px rgba(0, 0, 0, 0.171);
 }
 
 #options {
     width: 70%;
     border-radius: 10px;
     height: 100px;
-    background: rgba(99, 97, 97, 0.685);
+    background: rgba(158, 158, 158, 0.685);
     margin: auto;
     margin-top: 55px;
     text-align: center;
+    box-shadow: 0px 20px 50px 1px rgba(0, 0, 0, 0.171);
 }
 
 #gridNum {
